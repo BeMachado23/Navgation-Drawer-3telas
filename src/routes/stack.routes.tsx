@@ -10,10 +10,22 @@ export function StackRoutes (){
         <Navigator>
             <Screen
                 name='screenA'
+                options={{
+                    title: 'Home',
+                    headerShown: false,
+                }}
                 component={ScreenA}
             />
             <Screen
                 name='screenB'
+                options={{
+                    title: 'Tela B',
+                    headerTitleAlign: 'center',
+                    headerStyle:{
+                        backgroundColor: 'navy'
+                    }
+                    
+                }}
                 component={ScreenB}
             />
         </Navigator>
